@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Center - Octopus Insurance LLC</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Octopus Insurance">
+      <span>OCTOPUS</span>
+    </div>
+    
+    <nav id="navbar">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="#" class="dropdown-btn">Insurance <span class="dropdown-arrow">▼</span></a>
+        <div class="dropdown-content">
+          <a href="auto.html">Auto Insurance</a>
+          <a href="home.html">Home Insurance</a>
+          <a href="renters.html">Renters Insurance</a>
+          <a href="life.html">Life Insurance</a>
+          <a href="business.html">Business Insurance</a>
+          <a href="umbrella.html">Umbrella Insurance</a>
+        </div>
+      </div>
+      <a href="index.html#about">About Us</a>
+      <a href="index.html#contact">Contact Us</a>
+      <a href="client-center.html" style="color: #4A90E2; font-weight: 600;">Client Center</a>
+    </nav>
+    
+    <div class="header-actions">
+      <a href="client-center.html" class="header-cta">Client Center</a>
+      <div class="phone">📞 (312) 555-0199</div>
+    </div>
+    
+    <div class="mobile-menu-toggle" id="mobileMenuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" style="background-image: url('background.png'); background-size: cover; background-position: center; background-attachment: fixed; min-height: 300px;">
+    <div class="hero-wrapper">
+      <div class="hero-content">
+        <h1>Client Center</h1>
+        <p>Manage your insurance policies and accounts securely. Access your coverage details, make payments, and update your information anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENT CENTER SECTION -->
+  <section class="hero-section" style="background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%); padding: 3rem 1rem;">
+    <div class="hero-grid" style="max-width: 1200px; margin: 0 auto;">
+      <div class="quote-form" id="client-center" style="max-width: 100%; width: 100%; margin: 0;">
+        <h3>✓ EZLynx Customer Service Portal</h3>
+        <p>Access your policies, make payments, update information, and manage your insurance accounts securely.</p>
+        
+        <div class="iframe-container" style="height: auto; min-height: 600px;">
+          <iframe 
+            src="https://customerservice.agentinsure.com/EzlynxCustomerService/octopusins/Account/LogIn"
+            name="EZLynx Customer Service Portal"
+            height="600px"
+            width="100%"
+            frameborder="0"
+            style="border:none;border-radius:20px;background:white;">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="insurance-types" style="background: white; padding: 4rem 1rem;">
+    <h2>Client Center Features</h2>
+    <p>Everything you need to manage your insurance policies in one secure location</p>
+    
+    <div class="insurance-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+      <div class="insurance-card">
+        <div class="insurance-card-icon">📋</div>
+        <h3>View Policies</h3>
+        <p>Access and review all your active insurance policies and coverage details.</p>
+      </div>
+      
+      <div class="insurance-card">
+        <div class="insurance-card-icon">💳</div>
+        <h3>Make Payments</h3>
+        <p>Pay your insurance premiums securely online using multiple payment methods.</p>
+      </div>
+      
+      <div class="insurance-card">
+        <div class="insurance-card-icon">🔄</div>
+        <h3>Update Information</h3>
+        <p>Keep your personal and policy information current and accurate.</p>
+      </div>
+      
+      <div class="insurance-card">
+        <div class="insurance-card-icon">📄</div>
+        <h3>Download Documents</h3>
+        <p>Get instant access to policy documents, declarations, and certificates.</p>
+      </div>
+      
+      <div class="insurance-card">
+        <div class="insurance-card-icon">🔐</div>
+        <h3>Secure Login</h3>
+        <p>Bank-level security protects your personal and financial information.</p>
+      </div>
+      
+      <div class="insurance-card">
+        <div class="insurance-card-icon">📞</div>
+        <h3>Customer Support</h3>
+        <p>Access support resources and contact our customer service team.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background-color: var(--primary-dark); color: var(--white); padding: 2rem 1rem; text-align: center;">
+    <p>&copy; 2024 Octopus Insurance LLC. All rights reserved. | <a href="#" style="color: #4A90E2;">Privacy Policy</a> | <a href="#" style="color: #4A90E2;">Terms of Service</a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

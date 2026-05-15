@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Octopus Insurance LLC - Compare & Save on Insurance</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Octopus Insurance">
+      <span>OCTOPUS</span>
+    </div>
+    
+    <nav id="navbar">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="#" class="dropdown-btn">Insurance <span class="dropdown-arrow">▼</span></a>
+        <div class="dropdown-content">
+          <a href="auto.html">Auto Insurance</a>
+          <a href="home.html">Home Insurance</a>
+          <a href="renters.html">Renters Insurance</a>
+          <a href="life.html">Life Insurance</a>
+          <a href="business.html">Business Insurance</a>
+          <a href="umbrella.html">Umbrella Insurance</a>
+        </div>
+      </div>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact Us</a>
+      <a href="client-center.html" style="color: #4A90E2; font-weight: 600;">Client Center</a>
+    </nav>
+    
+    <div class="header-actions">
+      <a href="client-center.html" class="header-cta">Client Center</a>
+      <div class="phone">📞 (312) 555-0199</div>
+    </div>
+    
+    <div class="mobile-menu-toggle" id="mobileMenuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" style="background-image: url('background.png'); background-size: cover; background-position: center;">
+    <div class="hero-wrapper">
+      <div class="hero-content">
+        <div class="hero-badge">🏆 Licensed Insurance Agency</div>
+        <h1>Compare. <span class="highlight">Save.</span> Get Covered.</h1>
+        <p>Find the perfect insurance coverage for your needs in minutes. Multiple carriers, one simple process, and the best rates—all in one place.</p>
+        
+        <div class="hero-features">
+          <div class="feature-item">
+            <div class="feature-icon">⚡</div>
+            <div>
+              <h3>Fast & Easy</h3>
+              <p>Get quotes in just minutes</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🛡️</div>
+            <div>
+              <h3>Top Carriers</h3>
+              <p>Compare rates from trusted providers</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">💰</div>
+            <div>
+              <h3>Best Price</h3>
+              <p>We help you find the best rates</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🔒</div>
+            <div>
+              <h3>Secure & Private</h3>
+              <p>Your information is safe</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="quote-form" id="quote">
+        <h3><span>✓</span> Secure Live Insurance Quoting</h3>
+        <p>Get instant quotes from multiple carriers powered by our real-time quoting system.</p>
+        
+        <div class="iframe-container">
+          <iframe
+            id="quote-iframe"
+            src="https://www.agentinsure.com/compare/auto-insurance-home-insurance/octopusins/quote.aspx"
+            name="Secure Live Insurance Quoting"
+            width="100%"
+            frameborder="0"
+            scrolling="no"
+            style="border:none;background:white;">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS SECTION -->
+  <section class="stats">
+    <div class="stat-item">
+      <h4>10,000+</h4>
+      <p>Happy Customers</p>
+    </div>
+    <div class="stat-item">
+      <h4>25+</h4>
+      <p>Top Insurance Carriers</p>
+    </div>
+    <div class="stat-item">
+      <h4>4.9/5</h4>
+      <p>Average Rating</p>
+    </div>
+    <div class="stat-item">
+      <h4>15+</h4>
+      <p>Years of Experience</p>
+    </div>
+    <div class="stat-item">
+      <h4>🔒</h4>
+      <p>Secure & Private</p>
+    </div>
+  </section>
+
+  <!-- INSURANCE TYPES SECTION -->
+  <section class="insurance-types">
+    <h2>Insurance Quotes for Every Need</h2>
+    <p>Compare personalized quotes from trusted carriers in just minutes.</p>
+    
+    <div class="insurance-grid">
+      <div class="insurance-card">
+        <div class="insurance-card-icon">🚗</div>
+        <h3>Auto Insurance</h3>
+        <p>Compare auto insurance quotes and find the best rate for your vehicle.</p>
+        <a href="auto.html" class="card-link">Get a Quote →</a>
+      </div>
+      
+      <div class="insurance-card">
+        <div class="insurance-card-icon">🏠</div>
+        <h3>Home Insurance</h3>
+        <p>Protect your home and belongings with the right coverage.</p>
+        <a href="home.html" class="card-link">Get a Quote →</a>
+      </div>
+      
+      <div class="insurance-card">
+        <div class="insurance-card-icon">🏢</div>
+        <h3>Renters Insurance</h3>
+        <p>Protect your personal belongings and get liability coverage.</p>
+        <a href="renters.html" class="card-link">Get a Quote →</a>
+      </div>
+      
+      <div class="insurance-card">
+        <div class="insurance-card-icon">❤️</div>
+        <h3>Life Insurance</h3>
+        <p>Protect your family's future with the right life insurance plan.</p>
+        <a href="life.html" class="card-link">Get a Quote →</a>
+      </div>
+      
+      <div class="insurance-card">
+        <div class="insurance-card-icon">💼</div>
+        <h3>Business Insurance</h3>
+        <p>Protect your business with customizable coverage options.</p>
+        <a href="business.html" class="card-link">Get a Quote →</a>
+      </div>
+      
+      <div class="insurance-card">
+        <div class="insurance-card-icon">☂️</div>
+        <h3>Umbrella Insurance</h3>
+        <p>Extra liability coverage for greater peace of mind.</p>
+        <a href="umbrella.html" class="card-link">Get a Quote →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE SECTION -->
+  <section class="why-choose">
+    <div class="why-choose-content">
+      <h2>Why Choose Octopus Insurance LLC?</h2>
+      
+      <div class="why-choose-item">
+        <div class="why-choose-icon">✓</div>
+        <p><strong>Independent agents</strong> - We shop for you</p>
+      </div>
+      
+      <div class="why-choose-item">
+        <div class="why-choose-icon">✓</div>
+        <p><strong>Multiple quotes</strong> - Compare and save</p>
+      </div>
+      
+      <div class="why-choose-item">
+        <div class="why-choose-icon">✓</div>
+        <p><strong>Expert advice</strong> - We're here to help</p>
+      </div>
+      
+      <div class="why-choose-item">
+        <div class="why-choose-icon">✓</div>
+        <p><strong>Local support</strong> - We care about our community</p>
+      </div>
+      
+      <a href="#quote" class="why-choose-cta">Ready to Save? Get your free quotes now and start saving today!</a>
+    </div>
+    
+    <div class="why-choose-image">
+      <img src="logo.png" alt="Octopus Insurance Logo" style="max-width: 300px;">
+    </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section id="about" class="about-us">
+    <div class="about-us-content">
+      <h2>About Octopus Insurance LLC</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <h3>Your Trusted Insurance Partner in Chicago</h3>
+          <p>Octopus Insurance LLC is an independent insurance agency dedicated to helping individuals and businesses find the perfect coverage at the best possible rates. Since 2011, we've been serving the greater Chicago area with personalized insurance solutions.</p>
+          <p>As an independent agency, we work with over 25 top-rated insurance carriers to find you the coverage that fits your needs and budget. We're not tied to any one company, which means we can truly shop around to find you the best deal.</p>
+          <p>Our team of experienced agents understands that insurance can be confusing. That's why we're committed to explaining your options in plain English and helping you make informed decisions about your coverage.</p>
+          <h3>Our Mission</h3>
+          <p>To provide exceptional insurance services that protect what matters most to our clients while delivering outstanding customer service and competitive pricing.</p>
+        </div>
+        <div class="about-values">
+          <h3>Our Core Values</h3>
+          <div class="value-item">
+            <span class="value-icon">🤝</span>
+            <div>
+              <h4>Integrity</h4>
+              <p>We always put your interests first</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon">💡</span>
+            <div>
+              <h4>Expertise</h4>
+              <p>Years of industry knowledge</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon">❤️</span>
+            <div>
+              <h4>Service</h4>
+              <p>Going above and beyond for you</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon">🌟</span>
+            <div>
+              <h4>Excellence</h4>
+              <p>Quality in everything we do</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT US SECTION -->
+  <section id="contact" class="contact-us">
+    <div class="contact-us-content">
+      <h2>Contact Us</h2>
+      <p class="contact-subtitle">We're here to help with all your insurance needs</p>
+      <div class="contact-grid">
+        <div class="contact-info-box">
+          <h3>Get in Touch</h3>
+          <div class="contact-detail">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Visit Our Office</h4>
+              <p>323 Business Avenue<br>Suite 200<br>Chicago, IL 60601</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Call Us</h4>
+              <p>Main: (312) 555-0199<br>Fax: (312) 555-0200</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <h4>Email Us</h4>
+              <p>info@octopusinsurance.com</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">🕒</div>
+            <div>
+              <h4>Business Hours</h4>
+              <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 2:00 PM<br>Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-box">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="contactName">Full Name</label>
+              <input type="text" id="contactName" name="contactName" required placeholder="John Doe">
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" name="contactEmail" required placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+              <label for="contactPhone">Phone Number</label>
+              <input type="tel" id="contactPhone" name="contactPhone" placeholder="(555) 000-0000">
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Your Message</label>
+              <textarea id="contactMessage" name="contactMessage" rows="4" required placeholder="How can we help you?"></textarea>
+            </div>
+            <button type="submit" class="submit-btn send-btn">Send Message →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Octopus Insurance made it so easy to find the right coverage. I saved hundreds on my auto insurance!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background: linear-gradient(135deg, #4a90e2, #0052cc);"></div>
+          <div class="author-info">
+            <h4>Sarah J.</h4>
+            <p>Chicago, IL</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Great customer service and best rates out there. Highly recommend their team!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background: linear-gradient(135deg, #e2a24a, #cc5200);"></div>
+          <div class="author-info">
+            <h4>Michael T.</h4>
+            <p>Nashville, IL</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"They helped me bundle my home and auto and saved me so much. Very professional and responsive!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background: linear-gradient(135deg, #e24a96, #cc0052);"></div>
+          <div class="author-info">
+            <h4>Jessica R.</h4>
+            <p>Orlando Park, IL</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Insurance</h4>
+        <ul>
+          <li><a href="auto.html">Auto Insurance</a></li>
+          <li><a href="home.html">Home Insurance</a></li>
+          <li><a href="renters.html">Renters Insurance</a></li>
+          <li><a href="life.html">Life Insurance</a></li>
+          <li><a href="business.html">Business Insurance</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#get-quote">Get a Quote</a></li>
+          <li><a href="#carriers">Our Carriers</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <div class="contact-info">
+          📍 <p>323 Business Ave<br>Chicago, IL 60601</p>
+        </div>
+        <div class="contact-info">
+          📞 <p>(312) 555-0199</p>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Newsletter</h4>
+        <p>Stay updated with tips and insurance savings.</p>
+        <input type="email" placeholder="Your email address" style="width: 100%; padding: 0.5rem; border-radius: 4px; border: none; margin-top: 0.5rem;">
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Octopus Insurance LLC. We are an independent insurance agency working to find the right coverage for your life.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
