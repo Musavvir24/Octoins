@@ -208,3 +208,23 @@ function formatPhoneNumber(input) {
   }
   input.value = value;
 }
+
+// Ticker: pause on touch (toggle) for mobile and enable accessible pause
+document.addEventListener('DOMContentLoaded', function() {
+  const tickers = document.querySelectorAll('.ticker');
+  tickers.forEach(ticker => {
+    // touch devices: toggle pause on tap
+    ticker.addEventListener('touchstart', function(e) {
+      this.classList.toggle('paused');
+    });
+
+    // keyboard accessible: pause when focused
+    ticker.setAttribute('tabindex', '0');
+    ticker.addEventListener('focus', function() {
+      this.classList.add('paused');
+    });
+    ticker.addEventListener('blur', function() {
+      this.classList.remove('paused');
+    });
+  });
+});

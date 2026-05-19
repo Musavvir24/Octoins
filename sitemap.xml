@@ -43,18 +43,6 @@
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://octoins.com/business.html</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://octoins.com/umbrella.html</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://octoins.com/quote.html</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>

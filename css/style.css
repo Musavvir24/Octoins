@@ -312,6 +312,7 @@ nav a:hover::after {
   align-items: flex-start;
   justify-content: center;
   width: 100%;
+  min-height: calc(100vh - 5.5rem);
   overflow-x: hidden;
 }
 
@@ -798,6 +799,86 @@ nav a:hover::after {
   text-align: center;
 }
 
+/* PARTNER LOGO TICKER */
+.partner-ticker {
+  background: linear-gradient(180deg, rgba(10, 30, 62, 0.95), rgba(16, 47, 86, 0.96));
+  padding: 2.5rem 0 3rem;
+  margin-top: 0;
+}
+.ticker {
+  width: 100%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 24px;
+  padding: 1rem 0.5rem;
+  box-shadow: 0 25px 80px rgba(0, 18, 54, 0.12);
+}
+.ticker-track {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  animation: marquee 26s linear infinite;
+}
+.ticker-item {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 170px;
+}
+.ticker-item img {
+  max-height: 72px;
+  width: auto;
+  opacity: 0.95;
+  filter: grayscale(0.05) contrast(0.92);
+  transition: transform 0.25s ease, filter 0.25s ease, opacity 0.25s ease;
+}
+.ticker-item:hover img,
+.ticker-item:focus img {
+  filter: none;
+  transform: scale(1.05);
+  opacity: 1;
+}
+.ticker:hover .ticker-track,
+.ticker.paused .ticker-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .ticker-item { min-width: 140px; }
+  .ticker-item img { max-height: 52px; }
+}
+
+/* Heading and inner wrapper for ticker */
+.partner-ticker-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+.partner-ticker-heading {
+  font-size: 1.45rem;
+  font-weight: 800;
+  margin: 0;
+  color: #ffffff;
+}
+.partner-ticker-subtitle {
+  margin: 0.6rem auto 1.2rem;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1rem;
+  max-width: 700px;
+}
+
+.ticker-item { min-width: 160px; }
+
+
 .why-choose-image img {
   max-width: 100%;
   height: auto;
@@ -1265,11 +1346,11 @@ footer {
   .stat-item:not(:last-child)::after { display: none; }
   .stat-item:nth-child(5) { grid-column: span 2; }
 
-  .hero { min-height: 0; }
+  .hero { min-height: calc(100vh - 5.5rem); }
 
   .hero-wrapper {
     grid-template-columns: 1fr;
-    padding: 2rem 1.25rem;
+    padding: 2rem 1.25rem 3rem;
     gap: 2rem;
   }
 
