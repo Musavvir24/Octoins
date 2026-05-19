@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://octoins.com/sitemap.xml
+
+# Preferred host
+Host: octoins.com
