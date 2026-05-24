@@ -124,7 +124,7 @@ Message:
 ${message}
       `.trim();
       
-      const recipientEmail = 'info@octopusinsurance.com';
+      const recipientEmail = 'Juwan.newmen@yahoo.com';
       const mailtoLink = `mailto:${recipientEmail}?subject=Contact Form Submission&body=${encodeURIComponent(emailBody)}`;
       
       window.location.href = mailtoLink;
