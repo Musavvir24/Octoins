@@ -203,12 +203,28 @@ nav a:hover::after {
   box-shadow: var(--shadow-lg);
   border-radius: var(--radius-md);
   z-index: 1001;
-  top: calc(100% + 8px);
+  top: 100%;
   left: 0;
   margin: 0;
   padding: 0.5rem;
+  padding-top: 10px;
   border: 1px solid var(--border-gray);
   will-change: opacity;
+}
+
+/* Hover bridge: invisible hit area covering the gap between the button and dropdown */
+.dropdown::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 10px;
+  z-index: 1001;
+  pointer-events: none;
+}
+.dropdown:hover::after {
+  pointer-events: auto;
 }
 
 .dropdown-content::before {
@@ -444,8 +460,8 @@ nav a:hover::after {
 .iframe-container {
   width: 100%;
   border-radius: 12px;
-  overflow: hidden;
-  line-height: 0;
+  overflow: visible;
+  position: relative;
 }
 
 .iframe-container iframe {
@@ -456,6 +472,9 @@ nav a:hover::after {
   /* 780px — enough to show all form content without an internal scrollbar */
   height: 780px;
   display: block;
+  pointer-events: auto;
+  z-index: 1;
+  position: relative;
 }
 
 /* QUOTE FORM */
